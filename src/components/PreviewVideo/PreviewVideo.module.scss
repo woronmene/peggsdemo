@@ -1,0 +1,33 @@
+.previewVideo {
+  width: 70vw;
+  height: 50vw;
+  aspect-ratio: 1;
+
+  .videoContainer {
+    // height: 100%;
+    // width: 100%;
+    // aspect-ratio: 1.78/1;
+    margin: 0 auto;
+    position: relative;
+    // border: 1px solid yellow;
+    // width: 300px;
+
+    .tag {
+      width: 20px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    video {
+      width: 100%;
+      // aspect-ratio: 1.78/1;
+
+      // border: 2px solid red;
+
+      //   width: 100%;
+    }
+  }
+}

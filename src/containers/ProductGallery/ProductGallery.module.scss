@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.productGallery {
+  height: 100%;
+  //   border: 2px solid green;
+  flex: 1.2;
+  margin: 0 6px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+
+  .header {
+    // border: 1px solid red;
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 11px;
+    padding: 0 15px;
+
+    .headerTab {
+      padding-bottom: 8px;
+      font-weight: bold;
+      color: $gray;
+      cursor: pointer;
+      transition: all ease 0.2s;
+
+      &.active {
+        color: $purple;
+        border-bottom: 1px solid $purple;
+      }
+      @include lgMaxBreakPoint {
+        // display: inline;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+    @include xlMaxBreakPoint {
+      font-size: 9px;
+      padding: 0 5px;
+    }
+    @include lgMaxBreakPoint {
+      flex-direction: column;
+    }
+  }
+  .body {
+    // border: 1px solid red;
+    margin-top: 15px;
+
+    .productSection {
+      width: 100%;
+      //   border: 1px solid green;
+    }
+  }
+}

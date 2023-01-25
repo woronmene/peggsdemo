@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.product {
+  width: 100%;
+  //   border: 1px solid red;
+  height: 55px;
+  display: flex;
+  //   align-items: center;
+  justify-content: center;
+  background-color: $light-bg;
+  margin-bottom: 10px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  &.active {
+    border: 1px solid #fff;
+  }
+
+  @include lgMaxBreakPoint {
+    height: 45px;
+  }
+
+  .image {
+    height: 100%;
+    aspect-ratio: 1;
+    // border: 1px solid green;
+  }
+
+  .productName {
+    flex: 1;
+    // border: 1px solid red;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 12px;
+    @include lgMaxBreakPoint {
+      font-size: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}

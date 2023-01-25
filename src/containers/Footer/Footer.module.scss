@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.footer {
+  //   border: 1px solid red;
+  position: absolute;
+  background-color: $light-bg;
+  height: 60px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+
+  .footerWrapper {
+    // border: 1px solid red;
+    // width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .productsSaved {
+      font-size: 25px;
+
+      .productsSavedText {
+        margin-left: 5px;
+        font-size: 16px;
+        color: $gray;
+      }
+    }
+  }
+}

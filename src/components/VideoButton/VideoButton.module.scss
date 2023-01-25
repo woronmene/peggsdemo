@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.videoButton {
+  width: 35px;
+  aspect-ratio: 1;
+  //   border: 1px solid red;
+  background-color: $light-bg;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+  img {
+    width: 55%;
+  }
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}

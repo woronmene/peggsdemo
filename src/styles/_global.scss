@@ -1,0 +1,30 @@
+.globalContainer {
+  max-width: 70vw;
+  margin: 0 auto;
+  border: 1px solid green;
+
+  @include lgMaxBreakPoint {
+    max-width: 80vw;
+  }
+  // border: 3px solid black;
+}
+.container {
+  width: 93%;
+  max-width: 1700px;
+  margin: 0 auto;
+  margin-top: 30px;
+  // border: 1px solid green;
+
+  /* padding: 30px; */
+  // /* border: 2px solid red; */
+}
+.footerContainer {
+  width: 93%;
+  max-width: 1700px;
+  margin: 0 auto;
+  // margin-top: 20px;
+  // border: 1px solid green;
+
+  /* padding: 30px; */
+  // /* border: 2px solid red; */
+}

@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.videoGallery {
+  height: 100%;
+  // border: 2px solid green;
+  flex: 1;
+  margin: 0 6px;
+  overflow-y: scroll;
+  position: relative;
+
+  .header {
+    // border: 1px solid red;
+    position: sticky;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $main-bg;
+    display: flex;
+    color: $gray;
+    justify-content: center;
+    font-size: 11px;
+    padding: 10px;
+
+    .headerTab {
+      padding-bottom: 8px;
+      font-weight: bold;
+      white-space: nowrap;
+      margin: 0 5px;
+
+      cursor: pointer;
+      // border: 1px solid red;
+
+      &.active {
+        color: $purple;
+        border-bottom: 1px solid $purple;
+      }
+      @include lgMaxBreakPoint {
+        // display: inline;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+    @include xlMaxBreakPoint {
+      font-size: 9px;
+      padding: 0 5px;
+    }
+    @include lgMaxBreakPoint {
+      flex-direction: column;
+    }
+  }
+  .body {
+    // border: 1px solid red;
+    margin-top: 15px;
+
+    .videoSection {
+      width: 100%;
+      //   border: 1px solid green;
+
+      video {
+        width: 100%;
+        margin-bottom: 5px;
+        transition: all ease 0.3s;
+        cursor: pointer;
+
+        &.active {
+          border: 2px solid white;
+        }
+
+        &:hover {
+          transform: scale(0.9);
+          // border: 1px solid red;
+        }
+      }
+    }
+  }
+}
