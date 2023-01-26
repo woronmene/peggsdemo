@@ -34,7 +34,11 @@ function MainSection({
   // const [showTag, setShowTag] = useState(false);
 
   const videoContainerPortraitStyles = { height: "100%", aspectRatio: aspectRatioValue };
-  const videoContainerLandscapeStyles = { width: "100%", aspectRatio: aspectRatioValue };
+  const videoContainerLandscapeStyles = {
+    width: "100%",
+    height: "100%",
+    aspectRatio: aspectRatioValue,
+  };
 
   const handleForceUpdate = () => {
     setForceUpdate(!forceUpdate);
